@@ -19,12 +19,13 @@ OASIS Dataset: Provided by the Washington University Alzheimer’s Disease Resea
 
 ## Algorithm: 
 
-| Metric/Model        | Logistic Regression | SVM               | Random Forest      | KNN               |
-|---------------------|---------------------|-------------------|--------------------|-------------------|
-| **Accuracy**         | 0.945               | 0.896             | 0.990              | 0.791             |
-| **Precision**        | 0.95           | 0.88              | 0.99               | 0.82              |
-| **Recall**   | 0.95           | 0.90              | 0.99               | 0.79              |
-| **F1-Score** | 0.94           | 0.89              | 0.99               | 0.80              |
+| Algorithm                   | Accuracy | Precision | Recall | F1-Score | Loss | Cohen Kappa Score | Matthews Corr. Coeff. | Hamming Loss | Weighted Jaccard |
+|-----------------------------|----------|-----------------|--------------|----------------|----------|-------------------|-----------------------|--------------|------------------|
+| **K-Nearest Neighbors**     | 0.791    | 0.82            | 0.79         | 0.80           | 2.140    | 0.672             | 0.674                 | 0.209        | 0.705            |
+| **Support Vector Machine**  | 0.896    | 0.88            | 0.90         | 0.89           | 0.278    | 0.831             | 0.832                 | 0.104        | 0.837            |
+| **Logistic Regression**     | 0.945    | 0.95            | 0.95         | 0.94           | 0.178    | 0.912             | 0.913                 | 0.055        | 0.904            |
+| **Random Forest**           | 0.995    | 1.00            | 1.00         | 1.00           | 0.135    | 0.992             | 0.992                 | 0.005        | 0.991            |
+
 
 ### Performance-wise order of the models
 1. Random Forest
@@ -34,12 +35,11 @@ OASIS Dataset: Provided by the Washington University Alzheimer’s Disease Resea
 
 ## Booster: 
 
-| Metric                | RF + AdaBoost | RF + Gradient Boosting | RF + XGBoost |
-|-----------------------|-----------------------------------------|-------------------------------|---------------------------------|
-| **Accuracy**           | 0.9502                                  | 0.9801                        | 0.9950                          |
-| **Precision**| 0.67                                    | 0.97                          | 0.98                            |
-| **Recall**   | 0.75                                    | 0.99                          | 0.99                            |
-| **F1-Score** | 0.71                                    | 0.98                          | 0.98                            |
+| Algorithm                                | Accuracy | Precision | Recall | F1-Score | Loss | Cohen Kappa Score | Matthews Corr. Coeff. | Hamming Loss | Weighted Jaccard |
+|------------------------------------------|----------|-----------------|--------------|----------------|----------|-------------------|-----------------------|--------------|------------------|
+| **AdaBoost + Random Forest**     | 0.9502   | 0.9156          | 0.9502       | 0.9298         | 0.1031   | 0.9192           | 0.9230               | 0.0498       | 0.9156           |
+| **Gradient Boosting + Random Forest** | 0.9851   | 0.9853          | 0.9851       | 0.9851         | 0.0544   | 0.9759           | 0.9760               | 0.0149       | 0.9706           |
+| **Random Forest + XGBoost** | 0.9950   | 0.9955          | 0.9950       | 0.9951         | 0.0659   | 0.9920           | 0.9920               | 0.0050       | 0.9905           |
 
 ### Performance-wise order of the Boosters
 1. XGBoost
