@@ -46,4 +46,15 @@ OASIS Dataset: Provided by the Washington University Alzheimer’s Disease Resea
 2. Gradient Boosting
 3. AdaBoost
 
+# CNN Performance Comparison
+
+
+| Model         | Final Training Loss | Final Validation Loss | Final Training Accuracy | Final Validation Accuracy |
+|---------------|---------------------|-----------------------|-------------------------|---------------------------|
+| **VGG16**     | 0.0056              | 0.0071               | 1.0                     | 1.0                       |
+| **MobileNetV2** | 0.0247             | 0.0233               | 1.0                     | 1.0                       |
+| **ResNet50**  | 0.0534              | 0.0552               | 0.9962                  | 0.9851                    |
+| **InceptionV3** | 0.0542             | 0.0947               | 0.9912                  | 0.9851                    |
+| **CNN1**      | 0.4633              | 0.4099               | 0.8063                  | 0.9303                    |
+| **CNN2**      | 1.1722              | 1.2789               | 0.4931                  | 0.4876                    |
 
