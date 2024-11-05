@@ -24,7 +24,7 @@ OASIS Dataset: Provided by the Washington University Alzheimer’s Disease Resea
 | **K-Nearest Neighbors**     | 0.791    | 0.82            | 0.79         | 0.80           | 2.140    | 0.672             | 0.674                 | 0.209        | 0.705            |
 | **Support Vector Machine**  | 0.896    | 0.88            | 0.90         | 0.89           | 0.278    | 0.831             | 0.832                 | 0.104        | 0.837            |
 | **Logistic Regression**     | 0.945    | 0.95            | 0.95         | 0.94           | 0.178    | 0.912             | 0.913                 | 0.055        | 0.904            |
-| **Random Forest**           | 0.995    | 1.00            | 1.00         | 1.00           | 0.135    | 0.992             | 0.992                 | 0.005        | 0.991            |
+| **Random Forest**           | 0.995    | 9.98            | 9.98         | 9.96           | 0.135    | 0.992             | 0.992                 | 0.005        | 0.991            |
 
 
 ### Performance-wise order of the models
@@ -51,8 +51,8 @@ OASIS Dataset: Provided by the Washington University Alzheimer’s Disease Resea
 
 | Model         | Final Training Loss | Final Validation Loss | Final Training Accuracy | Final Validation Accuracy |
 |---------------|---------------------|-----------------------|-------------------------|---------------------------|
-| **VGG16**     | 0.0056              | 0.0071               | 1.0                     | 1.0                       |
-| **MobileNetV2** | 0.0247             | 0.0233               | 1.0                     | 1.0                       |
+| **Xception**     | 0.0056              | 0.0071               | 0.9998                     | 0.9951                       |
+| **MobileNetV2** | 0.0247             | 0.0233               | 0.9913                     | 0.9951                        |
 | **ResNet50**  | 0.0534              | 0.0552               | 0.9962                  | 0.9851                    |
 | **InceptionV3** | 0.0542             | 0.0947               | 0.9912                  | 0.9851                    |
 | **CNN1**      | 0.4633              | 0.4099               | 0.8063                  | 0.9303                    |
