@@ -9,6 +9,8 @@ OASIS Dataset: Provided by the Washington University Alzheimer’s Disease Resea
 - Numerical Data: Includes features like ID, Gender, Dominant Hand, Age, Education Level, Socioeconomic Status, MMSE, eTIV, nWBV, and CDR.
 - Image Data: MRI Images
 
+![image](https://github.com/user-attachments/assets/79cf2858-76f9-4772-a195-aba66d1f7e11)
+
 ## Model Architecture
 
 - Numerical Data: Random Forest with XGboost.
